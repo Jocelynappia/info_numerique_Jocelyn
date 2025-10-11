@@ -55,13 +55,6 @@ nav a {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-header {
-  padding: 5rem 1rem 3rem;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.3);
-  animation: fadeInDown 1s ease-in-out;
-=======
 /* --- HEADER --- */
 header {
   padding: 5rem 1rem 3rem;
@@ -83,28 +76,23 @@ header::before {
 header * {
   position: relative;
   z-index: 1;
->>>>>>> b19aed5 (reprise dossier / mise à jour html)
 }
 
 header h1 {
   font-size: 3rem;
   margin: 0;
-<<<<<<< HEAD
-=======
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 header h1:hover {
   transform: scale(1.05);
   color: var(--accent-color);
->>>>>>> b19aed5 (reprise dossier / mise à jour html)
 }
 
 header p {
   font-style: italic;
   color: var(--accent-color);
 }
-
 
 /* --- SECTIONS --- */
 section {
@@ -118,15 +106,12 @@ h2 {
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
-<<<<<<< HEAD
-=======
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 h2:hover {
   transform: translateX(5px);
   color: var(--accent-color);
->>>>>>> b19aed5 (reprise dossier / mise à jour html)
 }
 
 #about p {
@@ -135,9 +120,9 @@ h2:hover {
   text-align: justify;
 }
 
-/* --- PROJETS ET EXPÉRIENCES --- */
+/* --- PROJETS ET EXPERIENCES --- */
 .project,
-.Expériences {
+.experience {
   background: rgba(255, 255, 255, 0.05);
   padding: 1.5rem;
   border-radius: 10px;
@@ -147,33 +132,33 @@ h2:hover {
 }
 
 .project:hover,
-.Expériences:hover {
+.experience:hover {
   transform: scale(1.02);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 .project h3,
-.Expériences h3 {
+.experience h3 {
   color: var(--accent-color);
   margin-top: 0;
   transition: color 0.3s ease;
 }
 
 .project h3:hover,
-.Expériences h3:hover {
+.experience h3:hover {
   color: #00cfff;
 }
 
 .project p,
-.Expériences p {
+.experience p {
   line-height: 1.5;
 }
 
 /* --- LISTES DE TÉLÉCHARGEMENT --- */
 .download-list {
   display: flex;
-  flex-wrap: wrap; /* permet de passer à la ligne si besoin */
+  flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
   padding: 0;
@@ -181,7 +166,7 @@ h2:hover {
 }
 
 .download-list li {
-  flex: 1 1 200px; /* chaque bouton prend une largeur minimale mais s’adapte */
+  flex: 1 1 200px;
 }
 
 .btn-download {
@@ -200,9 +185,6 @@ h2:hover {
   background-color: #6cc2e9;
   transform: scale(1.05);
 }
-
-<<<<<<< HEAD
-=======
 
 /* --- PHOTO --- */
 #photo {
@@ -257,7 +239,6 @@ a:hover {
 }
 
 /* --- ANIMATIONS --- */
->>>>>>> b19aed5 (reprise dossier / mise à jour html)
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }

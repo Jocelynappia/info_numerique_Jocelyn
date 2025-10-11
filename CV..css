@@ -1,0 +1,69 @@
+
+
+.identité {
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+  color: blue;
+  margin-left: auto;
+  background-attachment: scroll;
+  display: flex;
+  position: fixed;
+  flex-flow: column;
+  width: 400px;
+  height: 60px;
+  padding: 80px;
+}
+div#avatar{
+  width: 60px;
+  height: 60px;
+  position: center;
+}
+div#adresse {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+  top: 70px;
+}
+
+.renseigement{
+padding-left: 300px;
+}
+
+div.formation{
+width: 400px;
+height: 150px;
+border: 1px solid none;
+margin: 10px;
+
+background-color: bisque;
+display: inline-block;
+position: relative;
+}
+div.Expérience{
+width: 400px;
+height: 100px;
+border: 1px solid none;
+background-color: bisque;
+display: inline-block;
+margin: 10px;
+position: relative;
+}
+div.Voyage{
+width: 400px;
+height: 100px;
+border: 1px solid none;
+background-color: bisque;
+display: inline-block;
+margin: 10px;
+position: relative;
+}
+div.Lecture{
+width: 400px;
+height: 100px;
+border: 1px solid none;
+background-color: bisque;
+display: inline-block;
+margin: 10px;
+position: relative;
+}

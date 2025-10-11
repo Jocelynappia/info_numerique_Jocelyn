@@ -1,0 +1,269 @@
+:root {
+  --bg-color: #1b1f3b;
+  --text-color: #fff;
+  --accent-color: #8fd9ff;
+}
+
+body.light {
+  --bg-color: #f4f4f4;
+  --text-color: #222;
+  --accent-color: #007acc;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.5s, color 0.5s;
+  scroll-behavior: smooth;
+}
+
+/* --- NAVIGATION --- */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.8rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+<<<<<<< HEAD
+header {
+  padding: 5rem 1rem 3rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease-in-out;
+=======
+/* --- HEADER --- */
+header {
+  padding: 5rem 1rem 3rem;
+  text-align: center;
+  background: url('Imge data2.jpg') center/cover no-repeat;
+  position: relative;
+  animation: fadeInDown 1s ease-in-out;
+  color: var(--text-color);
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+>>>>>>> b19aed5 (reprise dossier / mise à jour html)
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+<<<<<<< HEAD
+=======
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header h1:hover {
+  transform: scale(1.05);
+  color: var(--accent-color);
+>>>>>>> b19aed5 (reprise dossier / mise à jour html)
+}
+
+header p {
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+
+/* --- SECTIONS --- */
+section {
+  padding: 4rem 5% 2rem;
+  max-width: 1000px;
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+<<<<<<< HEAD
+=======
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+  transform: translateX(5px);
+  color: var(--accent-color);
+>>>>>>> b19aed5 (reprise dossier / mise à jour html)
+}
+
+#about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* --- PROJETS ET EXPÉRIENCES --- */
+.project,
+.Expériences {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project:hover,
+.Expériences:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.project h3,
+.Expériences h3 {
+  color: var(--accent-color);
+  margin-top: 0;
+  transition: color 0.3s ease;
+}
+
+.project h3:hover,
+.Expériences h3:hover {
+  color: #00cfff;
+}
+
+.project p,
+.Expériences p {
+  line-height: 1.5;
+}
+
+/* --- LISTES DE TÉLÉCHARGEMENT --- */
+.download-list {
+  display: flex;
+  flex-wrap: wrap; /* permet de passer à la ligne si besoin */
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.download-list li {
+  flex: 1 1 200px; /* chaque bouton prend une largeur minimale mais s’adapte */
+}
+
+.btn-download {
+  display: block;
+  text-align: center;
+  background-color: #8fd9ff;
+  color: #1b1f3b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #6cc2e9;
+  transform: scale(1.05);
+}
+
+<<<<<<< HEAD
+=======
+
+/* --- PHOTO --- */
+#photo {
+  width: 220px;
+  height: 260px;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- BOUTON TÉLÉCHARGEMENT CV --- */
+.download-btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #1b1f3b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.download-btn:hover {
+  background-color: #6cc2e9;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* --- LIENS --- */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- ANIMATIONS --- */
+>>>>>>> b19aed5 (reprise dossier / mise à jour html)
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

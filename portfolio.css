@@ -57,20 +57,35 @@ nav a {
 
 /* --- HEADER --- */
 header {
+  position: relative;
   padding: 5rem 1rem 3rem;
   text-align: center;
-  background: url('Imge data2.jpg') center/cover no-repeat;
-  position: relative;
-  animation: fadeInDown 1s ease-in-out;
+  background: url('image_data.jpg') center/cover no-repeat;
   color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeInDown 1s ease-in-out;
 }
 
 header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* voile sombre pour lisibilité */
   z-index: 0;
+}
+
+/* ✅ Conteneur centré et réduit */
+header .content {
+  max-width: 700px; /* largeur du bloc central */
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4); /* fond semi-transparent */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 header * {
@@ -78,9 +93,10 @@ header * {
   z-index: 1;
 }
 
+/* --- TITRE & TEXTE --- */
 header h1 {
-  font-size: 3rem;
-  margin: 0;
+  font-size: 2.5rem;
+  margin: 1rem 0 0.5rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -92,6 +108,23 @@ header h1:hover {
 header p {
   font-style: italic;
   color: var(--accent-color);
+}
+
+/* --- PHOTO --- */
+#photo {
+  width: 180px;
+  height: 220px;
+  margin: 0 auto 1rem;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* --- SECTIONS --- */
@@ -184,23 +217,6 @@ h2:hover {
 .btn-download:hover {
   background-color: #6cc2e9;
   transform: scale(1.05);
-}
-
-/* --- PHOTO --- */
-#photo {
-  width: 220px;
-  height: 260px;
-  margin: 0 auto;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.profile-pic {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 /* --- BOUTON TÉLÉCHARGEMENT CV --- */
